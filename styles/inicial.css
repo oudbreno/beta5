@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #1A3C64, #1E3148);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  color: #4e8cc2; /* Azul claro para o título */
+}
+#logoIn {
+    width: 150px; /* Ajusta a largura */
+    margin: 20px auto; /* Centraliza e adiciona margem */
+    display: block;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); /* Adiciona uma sombra */
+   }
+
+.search-bar {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.add-music-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background-color: #4e8cc2; /* Azul claro para os botões */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.add-music-btn:hover {
+  background-color: #3b6a92;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.songs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.song {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.song:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.player {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.current-song {
+  margin-bottom: 20px;
+}
+
+.current-song h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #4e8cc2;
+}
+
+.controls button {
+  background-color: #4e8cc2;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.controls button:hover {
+  background-color: #3b6a92;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.perfil-access button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #1A3C64;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.perfil-access button:hover {
+  background-color: #b5c5d6;
+}
+/* Estilo para o botão "Criar Nova Playlist" */
+.add-playlist-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1A3C64; /* Cor do botão */
+  color: #ffffff; /* Cor do texto */
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px; /* Adiciona um espaçamento entre os botões */
+  text-align: center;
+}
+
+.add-playlist-btn:hover {
+  background-color: #4A7CB3; /* Cor ao passar o mouse */
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo do botão "Criar Playlist" */
+.create-playlist-access button {
+  padding: 12px;
+  background-color: #4A7CB3;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px; /* Borda arredondada */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-align: center;
+  margin: 20px 0; /* Espaçamento entre os botões */
+}
+
+.create-playlist-access button:hover {
+  background-color: #1A3C64;
+}
+
+.create-playlist-access button:focus {
+  outline: none;
+}
+/* Estilo para a seção de playlists */
+.playlists {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.playlist {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.playlist:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.playlist-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+#musicList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.music-card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.music-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.music-card button:hover {
+  background-color: #45a049;
+}
+
+.player {
+  margin-top: 20px;
+  text-align: center;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.user-info img {
+  width: 40px; /* Aumentado para 40px */
+  height: 40px; /* Aumentado para 40px */
+  border-radius: 50%; /* Imagem circular */
+  margin-right: 10px;
+}
+
+.user-info span {
+  font-size: 16px; /* Ajustado para um texto maior */
+  font-weight: 500;
+  color: white;
+}
+
+.search-bar {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  margin-left: 100px;
+}
+
+.add-playlist-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background-color: #4e8cc2; /* Azul claro para os botões */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.add-playlist-btn:hover {
+  background-color: #3b6a92;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.my-area-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background-color: #4e8cc2; /* Azul claro para o botão */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.my-area-btn:hover {
+  background-color: #3b6a92; /* Azul mais escuro no hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* O restante do CSS permanece o mesmo */

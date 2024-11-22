@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yfitops</title>
+  <link rel="stylesheet" href="./styles/inicial.css">
+  <script src="./scripts/inicial.js" defer></script>
+</head>
+<body>
+  <header>
+    <!-- Div para mostrar o nome de usuário e a imagem do perfil -->
+    <div id="userInfo" class="user-info">
+      <img id="userImageHeader" src="" alt="Imagem do Usuário" class="user-image">
+      <span id="userName"></span>
+    </div>
+    
+    <h1>Yfitops <img src="./img/Union.png" alt="logo" id="logoIn"></h1>
+    <input type="text" class="search-bar" placeholder="Pesquise uma música...">
+  </header>
+  
+  <a href="./playlist.html" class="add-playlist-btn">Ver Playlists</a>
+  <a href="./minhaPagina.html" class="my-area-btn">Minha Área</a>
+
+
+  
+
+  <a href="cadastro.html" class="add-music-btn">Cadastrar Nova Música</a>
+
+  <section id="musicList">
+    <!-- As músicas serão carregadas aqui -->
+  </section>
+
+  <!-- Player de Áudio -->
+  <div class="player">
+    <audio id="audioPlayer" controls>
+      Seu navegador não suporta o áudio.
+    </audio>
+  </div>
+  
+  <div class="perfil-access">
+    <button onclick="window.location.href='perfil.html'">Ver Perfil</button>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,151 @@
+/* Estilo geral da página */
+body {
+    font-family: "Poppins", sans-serif; /* Fonte moderna e limpa */
+    margin: 0;
+    padding: 0;
+    background-color: #1e293b; /* Azul escuro elegante */
+    color: #e2e8f0; /* Texto cinza-claro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #334155; /* Azul acinzentado */
+    color: #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #475569; /* Linha de separação suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #e2e8f0; /* Cinza claro */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+}
+
+header nav a:hover {
+    background-color: #3b82f6; /* Azul brilhante ao passar o mouse */
+    color: #1e293b; /* Contraste claro */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(51, 65, 85, 0.9); /* Fundo semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+h2 {
+    color: #3b82f6; /* Azul brilhante */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Realce no título */
+}
+
+/* Lista de itens */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #475569; /* Azul-acinzentado suave */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #64748b; /* Azul mais claro ao hover */
+}
+
+/* Botões */
+button {
+    background: linear-gradient(135deg, #3b82f6, #2563eb); /* Gradiente azul */
+    color: #e2e8f0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #2563eb, #1e40af); /* Azul mais profundo ao hover */
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: #e2e8f0; /* Fundo cinza claro */
+    color: #1e293b; /* Texto escuro */
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0px 4px 12px rgba(59, 130, 246, 0.5); /* Destaque em azul */
+    background-color: #f1f5f9;
+}
+
+/* Links */
+a {
+    color: #3b82f6; /* Azul brilhante */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #60a5fa; /* Azul mais claro */
+}
+
+/* Rodapé (opcional) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #334155;
+    color: #e2e8f0;
+    margin-top: 20px;
+    font-size: 14px;
+}

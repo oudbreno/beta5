@@ -1,0 +1,147 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1A3C64, #1E3148);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 9px 50px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    background-color: #1A3C64;
+    padding: 30px;
+}
+
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-image button {
+    background-color: #ffffff;
+    color: #1A3C64;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-info {
+    flex: 2;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    font-size: 16px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+.save-btn {
+    background-color: #ffffff;
+    color: #1A3C64;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.save-btn:hover {
+    background-color: #b5c5d6;
+}
+
+.back-btn {
+    background-color: #ffffff;
+    color: #1A3C64;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.success-message {
+    font-size: 14px;
+    color: #4CAF50; /* Cor verde para sucesso */
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    animation: successAnimation 1s ease-in-out;
+}
+
+@keyframes successAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#noImageText {
+    font-size: 12px;
+    color: #f2f2f2;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}

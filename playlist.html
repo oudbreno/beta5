@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists</title>
+    <link rel="stylesheet" href="./styles/playlist.css">
+    <script src="./scripts/playlist.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Minhas Playlists</h1>
+        <ul id="playlist-list"></ul>
+        <button id="add-playlist">Criar Nova Playlist</button>
+        <button id="back-home" class="back-button">Voltar à Página Inicial</button>
+    </div>
+
+    <!-- Modal para criar playlist -->
+    <div id="playlist-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Criar Playlist</h2>
+            <input type="text" id="playlist-name" placeholder="Nome da Playlist">
+            <button id="save-playlist">Salvar</button>
+            <button id="close-modal">Cancelar</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
